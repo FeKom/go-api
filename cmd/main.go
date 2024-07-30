@@ -1,16 +1,8 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import "github.com/fekom/go-api/router"
 
 func main() {
-	server := gin.Default()
-
-	server.GET("/ping", func(ctx *gin.Context) {
-		ctx.JSON(200, gin.H{
-			"message": "pong",
-		})
-	})
-
-	server.Run(":3000")
+	router.InitializeServer()
 
 }

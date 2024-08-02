@@ -6,7 +6,5 @@ import (
 )
 
 func initializerRoutes(router *gin.Engine) {
-
 	router.GET("/search/:search_team", h.GetValues)
-
 }
